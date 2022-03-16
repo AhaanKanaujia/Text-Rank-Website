@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Extraction</title>
+</head>
+<body style="background-color: #caf0f8; text-align: center;">
+    <br><br><br>
+    <!-- <p style="font-family:'Times New Roman', Times, serif; font-size: large;">
+        {{ text }}
+    </p> -->
+    <div class="input" style="font-family:'Times New Roman', Times, serif; text-align: center; font-size: large;">
+        <h3>
+            <strong>
+                Keywords Generated using the Text Rank Algorithm
+            </strong>
+        </h3>
+        <table style="margin-left: auto; margin-right: auto;">
+            <th>Word</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>Text Rank Score</th>
+            {% for key, value in keywords.items() %} 
+            <tr>
+                <td>{{ key }}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{ value }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

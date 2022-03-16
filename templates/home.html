@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Extraction</title>
+</head>
+<body style="background-color: #caf0f8;">
+    <br><br><br>
+    <h3 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: xx-large;">
+        Keyword Extraction using Text Rank
+    </h3>
+    <div class="input">
+        <form action="{{ url_for('keywords') }}" method = "POST" style="text-align: center;">
+            <p><strong style="font-family:'Times New Roman', Times, serif; font-size: larger;">
+                Enter Text Here</strong>
+            </p>
+            <textarea rows = "10" cols = "120" name = "text" style="background-color: white; color: #000033;"></textarea>
+            <br><br>
+            <input type="submit" class="form-control" id="keywords" value = "Get Keywords" style="font-family: 'Times New Roman', Times, serif; font-weight: bold; font-size: large;">
+        </form>
+    </div>
+    <br><br><br><br>
+    <div class="links" style="font-family: 'Times New Roman', Times, serif; font-weight: bold; font-size: larger; text-align: center;">
+        <a href="https://github.com/AhaanKanaujia"><strong style="color:#000033; padding: 2%;">GitHub with Code for Website and Implementation</strong></a>
+        <a href="https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf"><strong style="color:#000033; padding: 2%;">Text Rank Research Paper</strong></a>
+        <a href="https://github.com/AhaanKanaujia"><strong style="color:#000033; padding: 2%;">Learn the Working of the Text Rank Algorithm</strong></a>
+    </div>
+</body>
+</html>
