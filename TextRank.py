@@ -2,8 +2,8 @@ from collections import OrderedDict
 import numpy as np
 from spacy.lang.en.stop_words import STOP_WORDS
 
-import en_core_web_lg
-nlp = en_core_web_lg.load()
+import en_core_web_md
+nlp = en_core_web_md.load()
 
 class TextRank():
     # constructor
