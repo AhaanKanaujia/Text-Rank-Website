@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-# from TextRank import return_keywords
+from TextRank import return_keywords
 
 app = Flask(__name__)
 
