@@ -1,6 +1,6 @@
 from collections import OrderedDict
 import numpy as np
-from spacy.lang.en.stop_words import STOP_WORDS
+from nltk.corpus import stopwords
 
 import en_core_web_lg
 nlp = en_core_web_lg.load()
@@ -15,7 +15,7 @@ class TextRank():
 
     # create a set of stopwords, that will not be considered as keywords
     def set_stopwords(self, stopwords):
-        for word in STOP_WORDS.union(set(stopwords)):
+        for word in stopwords:
             temp = nlp.vocab[word]
             temp.is_stop = True
     
